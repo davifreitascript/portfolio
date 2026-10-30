@@ -11,15 +11,15 @@ function Navbar() {
     ];
 
     return (
-        <header className="sticky top-0 z-50 border-b border-white/10  backdrop-blur-xl">
+        <header className="sticky top-0 z-50 backdrop-blur-2xl">
             <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
                 <a
                     href="#inicio"
                     className="text-2xl font-bold tracking-wide text-white"
                     onClick={() => setMenuOpen(false)}
                 >
-                    <span className="text-black underline">DA</span><span className="text-green-900">VI</span>
-                    <span className="ml-2 font-normal text-xs text-slate-600">/ DEV</span>
+                    <span className="text-black underline">DA</span><span className="text-green-600">VI</span>
+                    <span className="ml-2 font-normal text-[10px] text-slate-200">/ DEV</span>
                 </a>
 
                 <div className="hidden items-center gap-8 md:flex">
@@ -27,17 +27,17 @@ function Navbar() {
                         <a
                             key={link.href}
                             href={link.href}
-                            className="relative text-base text-slate-600 transition-colors duration-300 hover:text-green-800 after:absolute after:-bottom-2 after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-green-900 after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100"
+                            className="relative text-base text-slate-200 transition-colors duration-500 hover:text-green-600 after:absolute after:-bottom-2 after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-green-600 after:transition-transform after:duration-500 after:content-[''] hover:after:scale-x-100"
                         >
                             {link.label}
                         </a>
                     ))}
 
                     <a
-                        href="#projetos"
-                        className="group relative isolate inline-flex min-h-10 items-center justify-center overflow-hidden rounded-lg bg-green-900 px-8 font-bold text-slate-100"
+                        href="#contato"
+                        className="group relative isolate inline-flex min-h-8 items-center justify-center overflow-hidden rounded-lg bg-green-600 px-6 font-bold text-slate-100 transition-colors duration-500 hover:bg-[#16202f] hover:text-white"
                     >
-                        <span className="absolute inset-0 -z-10 origin-left scale-x-0 bg-black transition-transform duration-400 ease-in-out group-hover:scale-x-100" />
+                        <span className="absolute inset-0 -z-10 origin-left scale-x-0 bg-black transition-transform duration-500 ease-in-out group-hover:scale-x-100" />
                         Contato
                     </a>
                 </div>
@@ -81,7 +81,7 @@ function Navbar() {
                     <a
                         href="#contato"
                         onClick={() => setMenuOpen(false)}
-                        className="mt-2 block rounded-lg bg-green-900 px-4 py-3 text-center text-sm font-semibold text-slate-950 transition-colors hover:bg-green-800"
+                        className="mt-2 block rounded-lg bg-green-600 px-4 py-3 text-center text-sm font-semibold text-slate-950 transition-colors hover:bg-green-400"
                     >
                         Entrar em contato
                     </a>
